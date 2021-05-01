@@ -1,0 +1,183 @@
+.navbar {
+    display: -webkit-box;
+	display: flex;
+	justify-content: space-around;
+	-webkit-box-align: center;
+			align-items: center;
+	color: white;
+	background-color: transparent;
+	z-index: 5;
+	padding: 5px 0;
+	
+	position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.navbar:hover {
+	.navitem {
+		resize: none;
+	}
+}
+
+
+.navitem {
+	text-decoration: none;
+	font-size: 1.1rem;
+	font-weight: 500;  /* GET NICKO'S OPINION ON THIN VS BOLD FONT FOR MENU */
+	width: 100%;
+	position: relative;
+	text-align: center;
+	word-wrap: break-word;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-text-size-adjust: none;
+}
+
+.navitem:hover {
+	font-style: italic;
+	width: fixed;
+}
+
+#logo-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	top: 50%;
+	left: 50%;
+	
+}
+
+#logo-container img {
+
+}
+
+header {
+	opacity: 70%;
+	position: fixed;
+	top: 150px;
+}
+
+footer {
+	bottom: 0px;
+}
+
+
+
+/* .image-box {
+	position: relative;
+	margin: 10px auto;
+	overflow: hidden;
+	width: 540px;
+} */
+
+ .leftcolumn img {
+	 max-width: 100%;
+	 height: auto;
+	 display: block;
+	 transition: transform ease-in-out 0.3s;
+	 /*
+	 border: 20px white;
+	margin: 40px 10px;
+	transition: width 0.5s ease-out;
+	transition: height 0.5s ease-out;
+	*/
+}
+
+
+.leftcolumn img:hover {
+	transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+ 
+    -webkit-transform-origin: 0px 0px;
+    -moz-transform-origin: 0px 0px;
+    -ms-transform-origin: 0px 0px;
+    -o-transform-origin: 0px 0px;
+    transform-origin: 0px 0px;
+} 
+
+
+#homegallery {
+	display: inline-flex;
+	justify-content: space-around;
+	align-items: flex-start;
+	margin: 60px;
+	padding: 70px;
+}
+
+.leftcolumn {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-self: flex-end;
+	width: 40%;
+	overflow: hidden;
+}
+
+/* .leftitem {
+}
+ */
+
+.rightcolumn {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	width: 40%;
+	overflow: hidden;
+}
+
+/* .rightitem {
+	margin: 10px;
+} */
+
+/* Responsive Design */
+
+/* MOBILE */
+@media only screen and (max-width: 480) {
+	.navbar {
+	  -webkit-box-orient: vertical;
+	  -webkit-box-direction: normal;
+			  flex-direction: column;
+	  -webkit-box-align: stretch;
+			  align-items: stretch;
+	}
+   
+	.item {
+	  text-align: center;
+	}
+  }
+
+  /* VERTICAL TABLET or HORIZONTAL PHONE */
+  @media only screen and (max-width: 770px) {
+	.navbar {
+	  -webkit-box-orient: vertical;
+	  -webkit-box-direction: normal;
+			  flex-direction: column;
+	  -webkit-box-align: stretch;
+			  align-items: stretch;
+	}
+   
+	.item {
+	  text-align: center;
+	}
+  }
+
+
+/* HORIZONTAL TABLETS */
+  @media only screen and (max-width: 1024px) {
+	.navbar {
+	  -webkit-box-orient: vertical;
+	  -webkit-box-direction: normal;
+			  flex-direction: column;
+	  -webkit-box-align: stretch;
+			  align-items: stretch;
+	}
+   
+	.item {
+	  text-align: center;
+	}
+  }
