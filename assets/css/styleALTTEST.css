@@ -48,12 +48,19 @@
 	/*  REVISIT THIS WHEN SOLVING SHRINKING NAV PROBLEM */
 }
 
-header {
+.content {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
 	opacity: 70%;
-	position: fixed;
+	position: absolute;
+	z-index: 100;
 	top: 150px;
 }
 
+.content:hover {
+	color: transparent;
+}
 footer {
 	bottom: 0px;
 }
@@ -75,7 +82,7 @@ footer {
 	display: inline-flex;
 	justify-content: space-around;
 	align-items: flex-start;
-	margin-top: 3rem;
+	margin-top: 11rem;  
 	padding: 0 10px;
 }
 
@@ -83,8 +90,8 @@ footer {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
-	align-items: center; /* for the left column, this moves the column ever so slightly left. */
-	width: 35%;
+	 /* for the left column, this moves the column ever so slightly left. */
+	width: 38%;
 }
 
 .boundingbox {
